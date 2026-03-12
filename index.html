@@ -1,22 +1,70 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to Web Technologies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 <nav>
-        <a href="intro.html" target= "_blank">Week 1 Introduction</a>
-        <a href="html.html" target = "_blank">Week 2 HTML</a>
-        <a href="css.html" target = "_blank">Week 3 CSS</a>
-        <a href="javascript.html" target = "_blank">Week 4 JavaScript</a>
+    <div class="logo">WebTech</div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="html.html">HTML Basics</a>
+        <a href="css.html">CSS Basics</a>
+        <a href="javascript.html">JavaScript Basics</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </nav>
-<header>
-    <h1>This is an introduction to Web Technologies</h1>
-</header>
-<link rel="stylesheet" href="myWebStyle1.css">
-<p style="font-size: larger; text-align: center;">Basics of the Web:</p>
-<p style="font-size: large;">What is the Internet?</p>
-<p>The Internet is the backbone of the Web, the technical infrastructure that makes the Web possible.</p>
-<p style="font-size: large;">What is the Web?</p>
-<p>A web-based application, but users can interact.
-For example, BBC, Reuters, or other news sit</p>
-<hr/>
+<div class="mobile-menu" id="mobile">
+    <a href="html.html">HTML Basics</a>
+    <a href="css.html">CSS Basics</a>
+    <a href="javascript.html">JavaScript Basics</a>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
+
+<div class="container">
+    <h1>Welcome to Web Technologies</h1>
+    <p>This website introduces the core building blocks of the web: HTML, CSS, and JavaScript.  
+       These technologies allow developers to structure content, style webpages, and make them interactive.</p>
+    <p style= "font-size: larger; font-weight: bold;">What is the Internet?</p>
+    <p>The Internet is the backbone of the Web, the technical infrastructure that makes 
+        the Web possible, enabling data to travel between servers and browsers so users 
+        can access websites, applications, and online services from anywhere in the world.</p>
+    <p style= "font-size: larger; font-weight: bold;">What is the Web?</p>
+    <p>A web based application is software that runs in a browser rather than requiring installation on a device, 
+        but users can still interact with it. For example, BBC, Reuters, or other interactive news platforms allow
+        users to browse articles, watch videos, customise settings, and engage with dynamic content</p>
+
+    <h2>Introduction Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YtxLexm-9pI?si=HhZKWgcSA98ICpuT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
 <footer>
-<p>Email contact details</p>
- <p><a href="2502080.leedstrinity.ac.uk">2502080.leedstrinity.ac.uk</a></p>
+    Contact: 2502080@leedstrinity.ac.uk
+
+<h2>Send a Message</h2>
+
+<form id="contactForm">
+    <input type="text" id="name" placeholder="Your name" required>
+    <textarea id="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<script> js/main.js</script> </script>
 </footer>
+
+<script> js/main.js</script> </script>
+
+</body>
+</html>
