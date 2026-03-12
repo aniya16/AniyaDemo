@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Basics</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <div class="logo">WebTech</div>
+
+    
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="html.html">HTML Basics</a>
+        <a href="css.html">CSS Basics</a>
+        <a href="javascript.html">JavaScript Basics</a>
+    </div>
+
+    
+    <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</nav>
+
+
+<div class="mobile-menu" id="mobile">
+    <a href="html.html">HTML Basics</a>
+    <a href="css.html">CSS Basics</a>
+    <a href="javascript.html">JavaScript Basics</a>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById("mobileMenu").classList.toggle("show");
+}
+</script>
+
+<div class="container">
+    <h1>HTML Basics</h1>
+    <p>HTML (HyperText Markup Language) is the structure of a webpage. It defines headings, paragraphs,
+       images, links, lists, and more.</p>
+    <p style=>HTML stands for Hyper Text Markup Language</p>
+    <p style=>HTML is the standard markup language for creating Web pages</p>
+    <p style=>HTML describes the structure of a Web page</p>
+    <p style=>HTML consists of a series of elements</p>
+    <p style=>HTML elements tell the browser how to display the content</p>
+    <p style=>HTML elements label pieces of content such as "this is a heading", 
+    "this is a paragraph", "this is a link", etc.</p>
+
+    <h2>Example HTML Structure</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/it1rTvBcfRg?si=PEzqO_zB6Rk6ildo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+</div>
+
+<footer>
+    Contact: 2502080@leedstrinity.ac.uk
+
+    <h2>Send a Message</h2>
+
+<form id="contactForm">
+    <input type="text" id="name" placeholder="Your name" required>
+    <textarea id="message" placeholder="Your message" required></textarea>
+    <button type="submit">Send</button>
+</form>
+
+<script> js/main.js</script> </script>
+
+</footer>
+
+<script> js/main.js</script> </script>
+
+</body>
+</html>
